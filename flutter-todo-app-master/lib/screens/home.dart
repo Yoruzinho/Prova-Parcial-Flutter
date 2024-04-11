@@ -26,7 +26,7 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: tdBGColor,
-      appBar: _buildAppBar(), // Exibir a AppBar personalizada
+      appBar: _buildAppBar(),
       body: Stack(
         children: [
           Container(
@@ -188,6 +188,7 @@ class _HomeState extends State<Home> {
       backgroundColor: tdBGColor,
       elevation: 0,
       title: Text('Listinha de Compras'),
+      automaticallyImplyLeading: false,
       actions: [
         IconButton(
           icon: Icon(Icons.logout),
